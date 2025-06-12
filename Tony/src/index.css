@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .pos-button {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .pos-button-primary {
+    @apply bg-red-600 text-white hover:bg-red-700 shadow-lg;
+  }
+  
+  .pos-button-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-700;
+  }
+  
+  .pos-card {
+    @apply bg-white rounded-xl shadow-lg p-6 border-2;
+  }
+  
+  .pos-input {
+    @apply w-full p-3 border-2 border-gray-300 rounded-lg focus:border-red-500 focus:outline-none;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 50%, #000000 100%);
+}
